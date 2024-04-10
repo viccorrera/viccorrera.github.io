@@ -42,8 +42,9 @@ defaults:
   - scope:
       path: "_posts"
     values:
+      permalink: /blog/:title/
       layout: post
-      author: sal
+      author: Victor Correra
       avatar: /assets/images/avatar1.jpg
       
   # all pages
