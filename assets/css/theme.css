@@ -804,3 +804,10 @@ div.a2a_full_footer {display:none;}
 	 }
  }
  
+ .substack-form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center; /* Ensures the text in the title is also centered if it wraps */
+}
