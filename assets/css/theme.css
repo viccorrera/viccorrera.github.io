@@ -811,3 +811,9 @@ div.a2a_full_footer {display:none;}
 	justify-content: center;
 	text-align: center; /* Ensures the text in the title is also centered if it wraps */
 }
+
+.substack-form-title {
+	font-size: large;
+	font-weight: bold;
+	font-style: italic;
+}
