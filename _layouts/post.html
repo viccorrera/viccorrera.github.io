@@ -49,6 +49,39 @@ layout: default
 
 	<div class="row justify-content-center">
 
+		<!-- Blog Title -->
+		<div class="col-md-12 col-lg-8">
+			<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+			<div class="d-flex align-items-center blog-author-top-wrapper">
+
+				<!-- Post Author -->
+				<small class="">
+
+					<!-- Post Info Author -->
+
+
+					<!-- Post Info Date -->
+					<span class="text-muted d-block mt-1">
+						Written by <a href="{{site.baseurl}}/about.html"
+							class="ml-1 text-uppercase font-weight-bold text-muted">{{ author.name }}
+						</a>
+						<span class="mx-2">·</span>
+						<span>{{ page.date | date: '%b %d, %Y' }}</span>
+						<span class="mx-2">·</span>
+						<span class="catlist">
+							{% for category in page.categories %}
+							<a class="text-uppercase font-weight-bold text-muted"
+								href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category |
+								downcase
+								}}</a><span class="sep">, </span>
+							{% endfor %}
+						</span>
+					</span>
+				</small>
+			</div>
+
+		</div>
+
 		<!-- Hero Image -->
 		{% if page.image %}
 		<div class="col-md-12 col-lg-8">
