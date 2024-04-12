@@ -29,17 +29,6 @@ layout: default
 						</small>
 					</div>
 				</div>
-				{% if page.image %}
-				<div class="col-md-6 pr-0 align-self-center">
-					<figure>
-						<img class="rounded" src="{% if page.image contains " ://" %}{{ page.image }}{% else %}{{
-							site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-						{% if page.imagecaption %}
-						<figcaption class="text-center">{{page.imagecaption}}</figcaption>
-						{% endif %}
-					</figure>
-				</div>
-				{% endif %}
 			</div>
 		</div>
 	</div>
@@ -50,11 +39,25 @@ layout: default
 
 
 <div class="container-lg pt-4 pb-4">
+
+	<div class="justify-content-center d-flex">
+		<!-- Hero Image -->
+		{% if page.image %}
+		<div class="col-md-6 pr-0 align-self-center">
+			<figure>
+				<img class="rounded" src="{% if page.image contains " ://" %}{{ page.image }}{% else %}{{ site.baseurl
+					}}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+				{% if page.imagecaption %}
+				<figcaption class="text-center">{{page.imagecaption}}</figcaption>
+				{% endif %}
+			</figure>
+		</div>
+		{% endif %}
+	</div>
+
+
 	<div class="row justify-content-center">
-
-
 		<div class="col-md-12 col-lg-8">
-
 			<!-- Article -->
 			<article class="article-post">
 				{{ content }}
