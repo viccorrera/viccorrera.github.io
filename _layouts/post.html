@@ -2,48 +2,6 @@
 layout: default
 ---
 {% assign author = site.authors[page.author] %}
-<div class="container-lg pt-4 pb-4">
-	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
-		<div class="h-100 tofront">
-			<div class="row justify-content-center">
-				<div class="col-md-8 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
-					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
-					<div class="d-flex align-items-center blog-author-top-wrapper">
-
-						<!-- Post Author -->
-						<small class="">
-
-							<!-- Post Info Author -->
-
-
-							<!-- Post Info Date -->
-							<span class="text-muted d-block mt-1">
-								Written by <a href="{{site.baseurl}}/about.html"
-									class="ml-1 text-uppercase font-weight-bold text-muted">{{ author.name }}
-								</a>
-								<span class="mx-2">·</span>
-								<span>{{ page.date | date: '%b %d, %Y' }}</span>
-								<span class="mx-2">·</span>
-								<span class="catlist">
-									{% for category in page.categories %}
-									<a class="text-uppercase font-weight-bold text-muted"
-										href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category |
-										downcase
-										}}</a><span class="sep">, </span>
-									{% endfor %}
-								</span>
-							</span>
-						</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
 
 <div class="container-lg pt-4 pb-4">
 
@@ -52,22 +10,23 @@ layout: default
 		<!-- Blog Title -->
 		<div class="col-md-12 col-lg-8 mb-5">
 			<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+
+			<!-- Post Author -->
 			<div class="d-flex align-items-center blog-author-top-wrapper">
-
-				<!-- Post Author -->
-				<small class="">
-
-					<!-- Post Info Author -->
-
-
-					<!-- Post Info Date -->
+				<small>
 					<span class="text-muted d-block mt-1">
+
+						<!-- Post Info Author -->
 						Written by <a href="{{site.baseurl}}/about.html"
 							class="ml-1 text-uppercase font-weight-bold text-muted">{{ author.name }}
 						</a>
 						<span class="mx-2">·</span>
+
+						<!-- Post Info Date -->
 						<span>{{ page.date | date: '%b %d, %Y' }}</span>
 						<span class="mx-2">·</span>
+
+						<!-- Post Info Category -->
 						<span class="catlist">
 							{% for category in page.categories %}
 							<a class="text-uppercase font-weight-bold text-muted"
@@ -79,7 +38,6 @@ layout: default
 					</span>
 				</small>
 			</div>
-
 		</div>
 
 		<!-- Hero Image -->
