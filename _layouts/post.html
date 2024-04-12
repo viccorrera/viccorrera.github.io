@@ -11,15 +11,18 @@ layout: default
 					<div class="d-flex align-items-center blog-author-top-wrapper">
 
 						<!-- Post Author -->
-						<small class="ml-3">
+						<small class="">
 
 							<!-- Post Info Author -->
 
 
 							<!-- Post Info Date -->
 							<span class="text-muted d-block mt-1">
-								<a href="{{site.baseurl}}/about.html"> Written by {{ author.name }} · </a>
-								<span> {{ page.date | date: '%b %d, %Y' }} ·</span>
+								Written by <a href="{{site.baseurl}}/about.html" class="text-muted">{{ author.name }}
+								</a>
+								<span class="mx-2">·</span>
+								<span>{{ page.date | date: '%b %d, %Y' }}</span>
+								<span class="mx-2">·</span>
 								<span class="catlist">
 									{% for category in page.categories %}
 									<a class="text-uppercase font-weight-bold text-muted"
