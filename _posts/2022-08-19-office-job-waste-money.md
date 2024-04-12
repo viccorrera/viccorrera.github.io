@@ -2,11 +2,9 @@
 layout: post
 title:  "When I first started working in an office job, I wasted money on fancy things. Here’s how to avoid it."
 author: victor
-categories: 
+categories: [ Money ]
 image: assets/images/lucrezia-carnelos-wQ9VuP_Njr4-unsplash.jpg
 imagecaption: Photo by <a href="https://unsplash.com/@ciabattespugnose?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lucrezia Carnelos</a> on <a href="https://unsplash.com/photos/blue-and-brown-tote-bag-wQ9VuP_Njr4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
-tags: [money]
 ---
 I used to spend a lot of money on clothes and other stuff, trying to look cool.
 
