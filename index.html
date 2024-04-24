@@ -183,6 +183,9 @@ description: "Level up your thinking"
         <div class="col-md-8 main-loop">
 
             <h4 class="font-weight-bold spanborder"><span>Latest</span></h4>
+            {% for post in site.posts limit:4 %}
+                <p>{{ post.title }}</p>
+            {% endfor %}
 
 
             {% for post in site.posts limit:4 %}
