@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "When I first started working in an office job, I wasted money on fancy things. Here’s how to avoid it."
+subtitle: "I used to spend a lot of money on clothes and other stuff, trying to look cool."
 author: victor
 categories: [ Money ]
 image: assets/images/lucrezia-carnelos-wQ9VuP_Njr4-unsplash.jpg
