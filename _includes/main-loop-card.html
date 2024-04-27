@@ -6,7 +6,7 @@
 		<p class="excerpt">
 			<!-- if post has subtitle, use that. Else use first 186 characters of main body -->
 			{% if post.subtitle %}
-			{{ post.excerpt | strip_html }}
+			{{ post.subtitle | strip_html }}
 			{% else %}
 			{{ post.excerpt | strip_html | strip_newlines | truncate: 186}}
 			{% endif %}
