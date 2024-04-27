@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-8">
+            <h4 class="font-weight-bold spanborder"><span>Latest</span></h4>
+
+
+            {% for post in site.posts limit:4 %}
+
+            {% include main-loop-card.html post=post %}
+
+            {% endfor %}
+
+            {% assign previous_date = nil %}
+            {% for post in site.posts %}
+            {% assign current_date = post.date | date: "%B %Y" %}
+            {% if current_date != previous_date %}
+            <h2 class="month-year">{{ current_date }}</h2>
+            {% assign previous_date = current_date %}
+            {% endif %}
+            {% include main-loop-card.html post=post %}
+            {% endfor %}
+
+        </div>
+
+
+    </div>
+</div>

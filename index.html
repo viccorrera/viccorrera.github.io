@@ -11,8 +11,6 @@ description: "Level up your thinking"
 
     {% if page.url == "/" %}
 
-
-
     <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
     <div class="row remove-site-content-margin">
 
@@ -73,40 +71,24 @@ description: "Level up your thinking"
     {% endif %}
     {% endfor %}
 
-
-
-
-
     {% endif %} <!--endif page url is / -->
-
-
 
     <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
 
     <div class="row mt-3 justify-content-center">
-
         <div class="col-md-8">
-
             <h4 class="font-weight-bold spanborder"><span>Latest</span></h4>
-
 
             {% for post in site.posts limit:4 %}
 
-                {% include main-loop-card.html post=post %}
+            {% include main-loop-card.html post=post %}
 
             {% endfor %}
 
             <div class="mt-5">
                 <!-- <button class="btn" href="{{site.baseurl}}/blog">See all</button> -->
                 <button class="btn" href="#">See all</button>
-                
             </div>
-
         </div>
-
-
     </div>
-
-
-
 </div>
