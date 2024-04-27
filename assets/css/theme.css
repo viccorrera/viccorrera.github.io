@@ -821,6 +821,7 @@ footer {
 .excerpt {
 	color: rgba(0, 0, 0, 0.59);
 	margin-top: 10px;
+	font-size: 0.95rem;
 }
 
 article {
