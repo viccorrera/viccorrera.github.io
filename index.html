@@ -52,18 +52,18 @@ description: "Level up your thinking"
     <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
     <div class="mt-16 mx-auto my-0">
         <h2>Featured Articles</h2>
-        <div class="jumbotron jumbotron-fluid jumbotron-home mt-3 bg-lightblue position-relative">
+        <div class="d-flex flex-column gap-4">
             {% for post in site.posts %}
             {% if post.tags contains "sticky" %}
-            <div class="sticky-item">
-                <div class="text-container">
+            <div class="featured-item">
+                <div class="featured-text">
                     <h1 class="mb-3">{{post.title}}</h1>
                     <p class="mb-3 lead">
                         {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                     </p>
                     <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
                 </div>
-                <div class="col-md-6 d-none d-md-block pr-0"
+                <div class="featured-image"
                     style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">
                 </div>
             </div>

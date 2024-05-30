@@ -13025,3 +13025,7 @@ html {
     align-self: stretch !important;
   }
 }
+
+.gap-4 {
+  gap: 1rem; /* 16px */
+}	
