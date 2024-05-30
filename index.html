@@ -50,22 +50,25 @@ description: "Level up your thinking"
     </div>
 
     <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-    {% for post in site.posts %}
-    {% if post.tags contains "sticky" %}
-    <div class="jumbotron jumbotron-fluid jumbotron-home mt-3 bg-lightblue position-relative">
-        <div class="text-container">
-            <h1 class="mb-3">{{post.title}}</h1>
-            <p class="mb-3 lead">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-            </p>
-            <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
-        </div>
-        <div class="col-md-6 d-none d-md-block pr-0"
-            style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">
+    <div class="mt-16 mx-auto my-0">
+        <h2>Featured Articles</h2>
+        <div class="jumbotron jumbotron-fluid jumbotron-home mt-3 bg-lightblue position-relative">
+            {% for post in site.posts %}
+            {% if post.tags contains "sticky" %}
+            <div class="text-container">
+                <h1 class="mb-3">{{post.title}}</h1>
+                <p class="mb-3 lead">
+                    {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+                </p>
+                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="col-md-6 d-none d-md-block pr-0"
+                style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
-    {% endif %}
-    {% endfor %}
 
     {% endif %} <!--endif page url is / -->
 
