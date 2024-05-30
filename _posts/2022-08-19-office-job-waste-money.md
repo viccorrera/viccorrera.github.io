@@ -4,7 +4,7 @@ title:  "When I first started working in an office job, I wasted money on fancy 
 subtitle: "I used to spend a lot of money on clothes and other stuff, trying to look cool."
 author: victor
 categories: [ Money ]
-image: assets/images/lucrezia-carnelos-wQ9VuP_Njr4-unsplash.jpg
+image: assets/images/lucrezia-carnelos-wQ9VuP_Njr4-unsplash.webp
 imagecaption: Photo by <a href="https://unsplash.com/@ciabattespugnose?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lucrezia Carnelos</a> on <a href="https://unsplash.com/photos/blue-and-brown-tote-bag-wQ9VuP_Njr4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 ---
 I used to spend a lot of money on clothes and other stuff, trying to look cool.
