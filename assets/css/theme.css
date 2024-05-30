@@ -351,42 +351,36 @@ a.text-dark:hover {
 	margin-bottom: 2rem;
 }
 
-.jumbotron {
-	background-size: cover;
-	padding: 7rem 1rem;
+
+.jumbotron-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f0f8ff;
 }
 
-@media (min-width:992px) {
-	.jumbotron-lg-withnav {
-		padding-bottom: calc(10rem - 69.75px);
-	}
+.jumbotron-home .text-container {
+    flex: 1;
+    padding-right: 1rem;
+}
 
-	.jumbotron-lg {
-		padding: 10rem 0;
-	}
+.jumbotron-home .image-container {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
 
-	.jumbotron-xl {
-		padding: 15rem 0;
-	}
+@media (max-width: 768px) {
+    .jumbotron-home {
+        flex-direction: column;
+    }
 
-	.jumbotron-xl {
-		min-height: 100vh;
-	}
-
-	.bottom-align-text-absolute {
-		position: absolute;
-		bottom: 30px;
-		margin: auto;
-		left: 0;
-		right: 0;
-	}
-
-	.jumbotron-home h1 {
-		font-family: Georgia, Times, "Times New Roman", serif;
-		font-size: 2.4rem;
-		font-weight: 700;
-		line-height: 1.1;
-	}
+    .jumbotron-home .text-container, 
+    .jumbotron-home .image-container {
+        padding-right: 0;
+    }
 }
 
 .bg-black {
