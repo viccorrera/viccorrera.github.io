@@ -1053,6 +1053,26 @@ div.a2a_full_footer {
 	margin: 0 auto;
 }
 
+.featured-section {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5rem;
+	display: grid;
+	max-width: 42rem;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	column-gap: 2rem;
+	row-gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+	.featured-section {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		max-width: none;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 .featured-item {
 	display: flex;
     flex-direction: column;
